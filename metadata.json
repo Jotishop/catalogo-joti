@@ -2,5 +2,7 @@
   "name": "JOTI.style - Uniformes Corporativos & Camisetas Personalizadas",
   "description": "Catálogo comercial e calculadora de orçamentos de camisetas para uniformes empresariais em Itajaí/SC. Estamparia profissional, tecidos poliéster e algodão, pedido mínimo 10 peças.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

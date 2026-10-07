@@ -1,5 +1,5 @@
 import React from 'react';
-import { Truck, Sparkles, Shield, Building2, HardHat, Factory } from 'lucide-react';
+import { Truck, Sparkles, Shield, Factory } from 'lucide-react';
 
 export const SegmentsServed: React.FC = () => {
   const segments = [
@@ -33,10 +33,10 @@ export const SegmentsServed: React.FC = () => {
     <section className="py-14 sm:py-20 bg-slate-50 border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-500 bg-white px-3 py-1 rounded-md border border-slate-200">
+          <span className="text-[11px] font-bold uppercase tracking-widest text-slate-700 bg-white px-3 py-1 rounded border border-slate-300">
             Foco Corporativo B2B
           </span>
-          <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-950 mt-2">
+          <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-950 mt-3">
             Segmentos que atendemos em Itajaí e região
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
@@ -50,16 +50,16 @@ export const SegmentsServed: React.FC = () => {
             return (
               <div
                 key={seg.title}
-                className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs hover:border-slate-300 transition-colors flex flex-col justify-between"
+                className="bg-white p-6 rounded-2xl border border-slate-300 shadow-xs hover:border-slate-400 transition-colors flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200/60 flex items-center justify-center text-amber-700 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-800 mb-4">
                     <Icon className="w-5 h-5" />
                   </div>
                   <h3 className="font-bold text-slate-950 text-base leading-snug">
                     {seg.title}
                   </h3>
-                  <div className="text-xs font-semibold text-amber-800 mt-0.5">
+                  <div className="text-xs font-semibold text-[#0B132B] mt-0.5">
                     {seg.subtitle}
                   </div>
                   <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">

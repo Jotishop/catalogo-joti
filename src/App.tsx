@@ -6,15 +6,15 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { Calculator } from './components/Calculator';
-import { HowItWorks } from './components/HowItWorks';
+import { StepOverview } from './components/StepOverview';
 import { Fabrics } from './components/Fabrics';
 import { PrintModels } from './components/PrintModels';
-import { ShowcaseGallery } from './components/ShowcaseGallery';
 import { ColorPalette } from './components/ColorPalette';
-import { PricingTable } from './components/PricingTable';
-import { MonthlyReplenishment } from './components/MonthlyReplenishment';
 import { SizeGuide } from './components/SizeGuide';
+import { ShowcaseGallery } from './components/ShowcaseGallery';
+import { MonthlyReplenishment } from './components/MonthlyReplenishment';
+import { Calculator } from './components/Calculator';
+import { PricingTable } from './components/PricingTable';
 import { ClientsTrust } from './components/ClientsTrust';
 import { SegmentsServed } from './components/SegmentsServed';
 import { Faq } from './components/Faq';
@@ -23,55 +23,55 @@ import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-slate-900 font-sans selection:bg-amber-400 selection:text-slate-950 relative">
-      {/* Navigation */}
+    <div className="min-h-screen flex flex-col bg-white text-slate-900 font-sans selection:bg-[#0B132B] selection:text-white relative">
+      {/* 1. Cabeçalho Oficial */}
       <Navbar />
 
       <main className="flex-1">
-        {/* 1. Topo: Hero Section */}
+        {/* 2. Topo: Apresentação da Marca e Proposta de Valor */}
         <Hero />
 
-        {/* 2. Calculadora de Pedido (Peça principal do site) */}
-        <Calculator />
+        {/* 3. Visão Geral: O Caminho do Pedido em 5 Passos */}
+        <StepOverview />
 
-        {/* 3. Como funciona, em 3 passos */}
-        <HowItWorks />
-
-        {/* 4. Tecidos: Poliéster e Algodão lado a lado */}
+        {/* 4. Etapa 01: Escolha do Tecido (Poliéster vs Algodão) */}
         <Fabrics />
 
-        {/* 5. Modelos de Estampa em pessoas reais (Modelo 1 e Modelo 2) */}
+        {/* 5. Etapa 02: Modelos de Estampa em Pessoas Reais (Modelo 1 e 2) */}
         <PrintModels />
 
-        {/* 6. Galeria com 4 fotos de pessoas reais usando */}
-        <ShowcaseGallery />
-
-        {/* 7. Cores: Grade interativa com as 20 cores oficiais */}
+        {/* 6. Etapa 03: Cartela de 20 Cores Oficiais e Contraste de Tinta */}
         <ColorPalette />
 
-        {/* 8. Tabela de Preços por Quantidade (Mobile-first e Desktop) */}
-        <PricingTable />
-
-        {/* 9. Reposição mensal para novas contratações */}
-        <MonthlyReplenishment />
-
-        {/* 10. Tabela de Medidas (Apenas Linha Adulto P ao XGG) */}
+        {/* 7. Etapa 04: Grade de Medidas Adulto (P ao XGG) */}
         <SizeGuide />
 
-        {/* 11. Quem já uniformizou com a JOTI (Clientes Parceiros) */}
+        {/* 8. Galeria em Uso: Colaboradores Reais Uniformizados */}
+        <ShowcaseGallery />
+
+        {/* 9. Diferencial: Reposição Mensal Rápida para Novos Funcionários */}
+        <MonthlyReplenishment />
+
+        {/* 10. Etapa 05: Simulador de Pedido (Com aviso de valor regressivo por volume) */}
+        <Calculator />
+
+        {/* 11. Tabela Regressiva Oficial por Faixa de Quantidade */}
+        <PricingTable />
+
+        {/* 12. Quem já uniformizou com a JOTI (Clientes Parceiros) */}
         <ClientsTrust />
 
-        {/* 12. Segmentos corporativos atendidos */}
+        {/* 13. Segmentos B2B Atendidos em Itajaí/SC */}
         <SegmentsServed />
 
-        {/* 13. Perguntas Frequentes (FAQ) */}
+        {/* 14. Perguntas Frequentes (FAQ) */}
         <Faq />
       </main>
 
-      {/* 14. Rodapé Oficial */}
+      {/* 15. Rodapé Oficial */}
       <Footer />
 
-      {/* Botão Flutuante de WhatsApp permanente */}
+      {/* Botão Flutuante Permanente do WhatsApp */}
       <FloatingWhatsApp />
     </div>
   );

@@ -13,19 +13,17 @@ export const Logo: React.FC<LogoProps> = ({ className = '', variant = 'header', 
     variant === 'large'
       ? 'h-14 sm:h-16'
       : variant === 'footer'
-      ? 'h-11 sm:h-12'
+      ? 'h-10 sm:h-11'
       : 'h-10 sm:h-11';
 
   return (
     <div className={`inline-flex items-center gap-3 select-none ${className}`}>
       {!imgError ? (
-        <div className="flex items-center">
+        <div className={`flex items-center ${light ? 'bg-white/95 p-1.5 rounded-lg shadow-sm' : ''}`}>
           <img
             src="/logo-joti.png"
             alt="JOTI.style - Uniformes Corporativos"
-            className={`${imgHeightClass} w-auto max-w-[200px] object-contain transition-all ${
-              light ? 'brightness-110 drop-shadow-sm' : ''
-            }`}
+            className={`${imgHeightClass} w-auto max-w-[190px] object-contain block`}
             onError={() => setImgError(true)}
           />
         </div>
@@ -34,13 +32,13 @@ export const Logo: React.FC<LogoProps> = ({ className = '', variant = 'header', 
         <div className="flex items-center gap-2">
           <div
             className={`w-9 h-9 rounded-lg flex items-center justify-center font-black ${
-              light ? 'bg-white text-slate-900' : 'bg-slate-900 text-white'
+              light ? 'bg-white text-slate-900' : 'bg-slate-950 text-white'
             }`}
           >
             J
           </div>
-          <span className={`font-black text-xl ${light ? 'text-white' : 'text-slate-900'}`}>
-            JOTI<span className="text-amber-500">.style</span>
+          <span className={`font-black text-xl tracking-tight ${light ? 'text-white' : 'text-slate-950'}`}>
+            JOTI<span className="text-blue-900">.style</span>
           </span>
         </div>
       )}

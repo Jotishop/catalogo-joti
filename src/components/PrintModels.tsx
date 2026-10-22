@@ -14,7 +14,7 @@ export const PrintModels: React.FC = () => {
             Escolha o modelo de estampa da sua empresa
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Estampa em serigrafia de alta resistência aplicada direto nas fibras do tecido. Sem adesivo, sem borda plástica e sem fundo branco.
+            Estampa em tecnologia DTF Têxtil Digital de alta definição e elasticidade. Cores vivas, toque macio, sem limite de cores e sem fundo branco indesejado.
           </p>
         </div>
 
@@ -100,7 +100,7 @@ export const PrintModels: React.FC = () => {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Estampa no peito esquerdo (10 x 10 cm) somada à identificação ampla nas costas (25 x 17 cm). Impressão serigráfica limpa, sem remendo branco ou bordas plásticas indesejadas.
+                  Estampa no peito esquerdo (10 x 10 cm) somada à identificação ampla nas costas (25 x 17 cm). Aplicação em DTF nítida, sem remendo branco ou bordas plásticas indesejadas.
                 </p>
 
                 <div className="space-y-2 pt-2 border-t border-slate-100 text-xs text-slate-700">

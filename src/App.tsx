@@ -13,10 +13,8 @@ import { ColorPalette } from './components/ColorPalette';
 import { SizeGuide } from './components/SizeGuide';
 import { ShowcaseGallery } from './components/ShowcaseGallery';
 import { MonthlyReplenishment } from './components/MonthlyReplenishment';
-import { Calculator } from './components/Calculator';
-import { PricingTable } from './components/PricingTable';
 import { ClientsTrust } from './components/ClientsTrust';
-import { SegmentsServed } from './components/SegmentsServed';
+import { OrderPricingSection } from './components/OrderPricingSection';
 import { Faq } from './components/Faq';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
@@ -28,50 +26,44 @@ export default function App() {
       <Navbar />
 
       <main className="flex-1">
-        {/* 2. Topo: Apresentação da Marca e Proposta de Valor */}
+        {/* 2. Topo: Apresentação da Marca e Proposta de Valor B2B */}
         <Hero />
 
-        {/* 3. Visão Geral: O Caminho do Pedido em 5 Passos */}
+        {/* 3. Visão Geral: O Caminho do Uniforme em 5 Passos */}
         <StepOverview />
 
-        {/* 4. Etapa 01: Escolha do Tecido (Poliéster vs Algodão) */}
+        {/* 4. Etapa 01: Especificação do Tecido (Poliéster vs Algodão) */}
         <Fabrics />
 
-        {/* 5. Etapa 02: Modelos de Estampa em Pessoas Reais (Modelo 1 e 2) */}
+        {/* 5. Etapa 02: Modelos de Estampa em Pessoas Reais (Mod. 1 e 2) */}
         <PrintModels />
 
-        {/* 6. Etapa 03: Cartela de 20 Cores Oficiais e Contraste de Tinta */}
+        {/* 6. Etapa 03: Cartela Oficial com 20 Cores e Contraste de Tinta */}
         <ColorPalette />
 
         {/* 7. Etapa 04: Grade de Medidas Adulto (P ao XGG) */}
         <SizeGuide />
 
-        {/* 8. Galeria em Uso: Colaboradores Reais Uniformizados */}
+        {/* 8. Prova Visual: Colaboradores Reais Uniformizados em Ação */}
         <ShowcaseGallery />
 
-        {/* 9. Diferencial: Reposição Mensal Rápida para Novos Funcionários */}
+        {/* 9. Diferencial Chave: Reposição Mensal Rápida (Logo Arquivada) */}
         <MonthlyReplenishment />
 
-        {/* 10. Etapa 05: Simulador de Pedido (Com aviso de valor regressivo por volume) */}
-        <Calculator />
-
-        {/* 11. Tabela Regressiva Oficial por Faixa de Quantidade */}
-        <PricingTable />
-
-        {/* 12. Quem já uniformizou com a JOTI (Clientes Parceiros) */}
+        {/* 10. Credibilidade: Empresas Parceiras e Segmentos Atendidos */}
         <ClientsTrust />
 
-        {/* 13. Segmentos B2B Atendidos em Itajaí/SC */}
-        <SegmentsServed />
+        {/* 11. Etapa 05: Simulador & Tabela Oficial (Lado a lado no desktop, empilhado no celular) */}
+        <OrderPricingSection />
 
-        {/* 14. Perguntas Frequentes (FAQ) */}
+        {/* 12. Dúvidas Frequentes (FAQ PJ) */}
         <Faq />
       </main>
 
-      {/* 15. Rodapé Oficial */}
+      {/* 13. Rodapé Oficial */}
       <Footer />
 
-      {/* Botão Flutuante Permanente do WhatsApp */}
+      {/* Botão Flutuante Permanente do WhatsApp (+55 47 9706-5134) */}
       <FloatingWhatsApp />
     </div>
   );

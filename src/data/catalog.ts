@@ -1,3 +1,5 @@
+import { ASSETS } from '../assets';
+
 export interface ColorItem {
   id: string;
   code: string;
@@ -5,7 +7,17 @@ export interface ColorItem {
   hex: string;
   textColor: 'light' | 'dark'; // for t-shirt ink print
   isDark: boolean;
+  dedicatedPhoto?: string;
 }
+
+/**
+ * Mapeamento oficial de fotografias reais de estúdio por código de cor da cartela JOTI.
+ * Cor 11 (Lilás): Piloto comercial com fotografia real em modelos de frente e costas.
+ * Demais cores: Mapeamento preparado para os assets dedicados de cada uma das 22 cores.
+ */
+export const COLOR_STUDIO_PHOTOS: Record<string, string> = {
+  '11': ASSETS.duoLilas,
+};
 
 export const CATALOG_COLORS: ColorItem[] = [
   { id: '01', code: '01', name: 'Branco', hex: '#FFFFFF', textColor: 'dark', isDark: false },
@@ -158,6 +170,10 @@ export const FAQS = [
   {
     q: 'Como funciona o frete e entrega?',
     a: 'Frete sob consulta conforme o CEP da sua empresa. Atendemos com entrega rápida em Itajaí, Navegantes, Balneário Camboriú e região, além de envio para todo o Brasil.',
+  },
+  {
+    q: 'Qual é o tipo de estampa utilizada? Trabalham com serigrafia ou DTF?',
+    a: 'Trabalhamos exclusivamente com estamparia DTF (Direct to Film) Têxtil Digital HD de alta definição. O DTF garante cores fiéis, resolução fotográfica sem limites de tons ou degradês, toque super macio e elástico que estica com a malha, e sem fundo branco indesejado ou remendo plástico ao redor da arte. Tem altíssima resistência e não racha nem esfarela após dezenas de lavagens industriais.',
   },
   {
     q: 'Como devo enviar a logo da minha empresa?',
